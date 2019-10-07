@@ -3,13 +3,13 @@
 /* 
   > Write This Code On Button href 
 
-  > {{ url('/delete-category',['id'=>$category->id] ) }}
+  > {{ url('/delete-category',$category->id ) }}
 
 */
 
   /*
    >  Create Route For This 
-    Route::post('/delete-category/{id}','CategoryController@deleteCategory');
+    Route::get('/delete-category/{id}','CategoryController@deleteCategory');
   */
   
 
