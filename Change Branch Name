@@ -1,0 +1,7 @@
+git branch -m old_name new_name
+// Delete the remote branch with the old name and push the new branch to the remote repository
+git push origin :old_name new_name
+// verify
+git branch -a
+// Reset the upstream branch
+git push origin -u new-name
