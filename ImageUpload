@@ -1,0 +1,10 @@
+  if($request->hasFile('image')) {
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads/schedule', $filename);
+            $schedules->image = $filename;
+        } else {
+            return $request;
+            $schedules->image = '';
+        }
